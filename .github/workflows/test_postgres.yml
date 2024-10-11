@@ -39,6 +39,6 @@ jobs:
 
     # Run the first Python script
     - name: Run first Python script
-      run: python main.py
+      run: python -u main.py
       env:
         DATABASE_URL: postgres://user:password@localhost:5432/test_db
