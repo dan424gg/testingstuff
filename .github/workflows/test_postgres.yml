@@ -11,7 +11,7 @@ jobs:
 
     services:
       postgres:
-        image: postgres:13  # You can use any version you need
+        image: postgres:13
         env:
           POSTGRES_USER: user
           POSTGRES_PASSWORD: password
@@ -19,7 +19,7 @@ jobs:
         ports:
           - 5432:5432
         options: > 
-          --health-cmd="pg_isready -U user"  # Health check to ensure PostgreSQL is ready
+          --health-cmd="pg_isready -U user"
           --health-interval=10s
           --health-timeout=5s
           --health-retries=5
