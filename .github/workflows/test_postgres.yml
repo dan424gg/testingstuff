@@ -47,4 +47,4 @@ jobs:
     - name: Run first Python script
       run: python -u main.py
       env:
-        DATABASE_URL: postgres://user:password@localhost:5432/test_db
+        DATABASE_URL: postgresql+psycopg2://user:password@localhost:5432/test_db
