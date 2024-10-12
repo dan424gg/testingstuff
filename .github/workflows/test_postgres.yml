@@ -37,6 +37,12 @@ jobs:
           sleep 1
         done
 
+    # Install dependencies
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
     # Run the first Python script
     - name: Run first Python script
       run: python -u main.py
